@@ -1,0 +1,1 @@
+Setting the visibility to hidden doesn't remove it from the DOM but just makes it invisible.

@@ -1,0 +1,5 @@
+If there are two elements with overlapping margins, then the larger margin takes over.
+
+This is a feature not a bug and it is called margin collapsing.
+
+Margin collapsing was made to prevent large margins from appearing.

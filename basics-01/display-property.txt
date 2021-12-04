@@ -1,0 +1,33 @@
+By default an <li> tag takes the whole entire width. This is the behavior of display: block;
+
+Take the following code:
+
+<li>
+  <p>Text</p>
+  <p>Text 2</p>
+</li>
+
+This would render as:
+
+- Text Text 2
+
+Because the <p> tag has a display set to inline.
+Setting it to inline would remove features such as padding, width, height, and margin.
+If we want there to be a line break, we would do:
+
+<li>
+  <p>Text</p>
+  <p style="display: block;">Text 2</p>
+</li>
+
+Which would render as:
+
+- Text
+  Text 2
+
+This is because now the "Text 2" takes the whole width.
+
+Setting the display to none, removes it from the document, making it invisible.
+
+Setting the display to inline-block mixes up block and inline aligning everything next to each other.
+This means that it will be inline and have features such as padding and margin.

@@ -1,0 +1,14 @@
+margin: apx bpx cpx dpx; → margin-top:    apx;
+                           margin-right:  bpx;
+                           margin-bottom: cpx;
+                           margin-left:   dpx;
+
+margin: apx bpx; → margin-top:    apx;
+                   margin-bottom: apx;
+                   margin-right:  bpx;
+                   margin-left:   bpx;
+
+margin: apx; → margin-top:    apx;
+               margin-bottom: apx;
+               margin-right:  apx;
+               margin-left:   apx;

@@ -1,0 +1,34 @@
+Each and every element in CSS is like this:
+
+┌─────────────────────────────────────┐
+│                                     │
+│               margin                │
+│   ┌─────────────────────────────┐   │
+│   │                             │   │
+│   │           border            │   │
+│   │   ┌─────────────────────┐   │   │
+│   │   │                     │   │   │
+│   │   │       padding       │   │   │
+│   │   │   ┌─────────────┐   │   │   │
+│   │   │   │             │   │   │   │
+│   │   │   │   content   │   │   │   │
+│   │   │   │             │   │   │   │
+│   │   │   └─────────────┘   │   │   │
+│   │   │                     │   │   │
+│   │   └─────────────────────┘   │   │
+│   │                             │   │
+│   └─────────────────────────────┘   │
+│                                     │
+└─────────────────────────────────────┘
+
+Setting the width and height only edits teh width and the height of the content.
+
+The margin, padding, and border add onto the total height and width.
+
+By setting the box-sizing to border-box, the width and height include the padding and the border.
+The default is box-sizing: content-box.
+
+If you set the whole body to box-sizing: border-box, it actually won't apply, because by default
+everything has a display: block applied on it, setting the box-sizing back to content-box. And the
+inheritance won't apply. You will have to use the universal * wildcard selector to set it to
+box-sizing: border-box.

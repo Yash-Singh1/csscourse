@@ -1,0 +1,3 @@
+border: apx style color; → border-width: apx;
+                           border-style: style;
+                           border-color: color;

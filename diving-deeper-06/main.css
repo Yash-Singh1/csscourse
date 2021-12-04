@@ -1,0 +1,28 @@
+body,
+html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+#box-one {
+  /* display: none; */
+  visibility: hidden;
+}
+
+div:last-child:hover {
+  background-color: red;
+}
+
+#box-one,
+#box-two {
+  display: inline-block;
+  box-sizing: content-box;
+  border: 2px solid red;
+  padding: 10px 11px 10.5px 11.5px;
+  margin: 10px 11px 10.5px 11.5px;
+  height: 300px;
+  width: 50%;
+}
