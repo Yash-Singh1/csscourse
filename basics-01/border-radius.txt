@@ -1,0 +1,9 @@
+border-radius: apx; → border-top-left-radius: apx;
+                      border-top-right-radius: apx;
+                      border-bottom-right-radius: apx;
+                      border-bottom-left-radius: apx;
+
+border-radius: apx bpx cpx dpx; → border-top-left-radius: apx;
+                                  border-top-right-radius: bpx;
+                                  border-bottom-right-radius: dpx;
+                                  border-bottom-left-radius: cpx;

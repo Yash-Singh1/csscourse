@@ -1,25 +1,28 @@
 Each and every element in CSS is like this:
 
-┌─────────────────────────────────────┐
-│                                     │
-│               margin                │
-│   ┌─────────────────────────────┐   │
-│   │                             │   │
-│   │           border            │   │
-│   │   ┌─────────────────────┐   │   │
-│   │   │                     │   │   │
-│   │   │       padding       │   │   │
-│   │   │   ┌─────────────┐   │   │   │
-│   │   │   │             │   │   │   │
-│   │   │   │   content   │   │   │   │
-│   │   │   │             │   │   │   │
-│   │   │   └─────────────┘   │   │   │
-│   │   │                     │   │   │
-│   │   └─────────────────────┘   │   │
-│   │                             │   │
-│   └─────────────────────────────┘   │
-│                                     │
-└─────────────────────────────────────┘
+┌──────────────────────────────────────────┐
+│                  margin                  │
+│  ┌────────────────────────────────────┐  │
+│  |                                    |  │
+│  |               outline              |  │
+│  |   ┌─────────────────────────────┐  |  │
+│  |   │                             │  |  │
+│  |   │           border            │  |  │
+│  |   │   ┌─────────────────────┐   │  |  │
+│  |   │   │                     │   │  |  │
+│  |   │   │       padding       │   │  |  │
+│  |   │   │   ┌─────────────┐   │   │  |  │
+│  |   │   │   │             │   │   │  |  │
+│  |   │   │   │   content   │   │   │  |  │
+│  |   │   │   │             │   │   │  |  │
+│  |   │   │   └─────────────┘   │   │  |  │
+│  |   │   │                     │   │  |  │
+│  |   │   └─────────────────────┘   │  |  │
+│  |   │                             │  |  │
+│  |   └─────────────────────────────┘  |  │
+│  └────────────────────────────────────┘  │
+│                                          │
+└──────────────────────────────────────────┘
 
 Setting the width and height only edits teh width and the height of the content.
 
@@ -32,3 +35,5 @@ If you set the whole body to box-sizing: border-box, it actually won't apply, be
 everything has a display: block applied on it, setting the box-sizing back to content-box. And the
 inheritance won't apply. You will have to use the universal * wildcard selector to set it to
 box-sizing: border-box.
+
+The outline is a thin line that can be set on the outside of the border and inside of the margin.

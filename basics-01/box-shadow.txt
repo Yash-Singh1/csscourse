@@ -1,0 +1,3 @@
+box-shadow: <offset-x> <offset-y> <blur-radius> <spread-radius> <color>;
+
+NOTE: Don't forget <color> or else the shadow won't render
