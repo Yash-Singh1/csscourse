@@ -1,0 +1,34 @@
+position: static;
+----
+
+This means that all top, bottom, right, left values are ignored
+and the elements are positioned by the document flow.
+
+position: fixed;
+----
+
+Takes the element out of the document flow. The positioning context
+changes to the viewport. Also has a side-effect of a inline-block like
+behavior. Works with block/inline level elements too.
+
+position: absolute;
+----
+
+Absolute and doesn't scroll down with scrolling. The positioning context
+is the lowest ancestor that has a position property set to something other
+than static. Difference between fixed is the positioning context depends.
+
+position: relative;
+----
+
+The element isn't taken out of the document flow and the positioning context
+is relative to itself. This can be useful also when trying to add a position
+value of something other than static without breaking your site.
+
+position: sticky;
+----
+
+Hybrid of relative and fixed. Doesn't take the element out of the document flow.
+The top, bottom, right, and left properties define when relative to the viewport
+the fixed behavior should start. It stops the fixed behavior when the end of the
+parent element's content is reached.

@@ -1,0 +1,7 @@
+z-index: auto; -> z-index: 0; (Has other side effects read more about stacking context)
+
+z-index: <integer>; -> higher the integer, the higher in the stack
+
+The z-index won't have any impact if the position is static.
+
+If two elements have the same z-index, the stack will be respected by the document flow.

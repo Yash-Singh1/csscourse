@@ -1,0 +1,7 @@
+An image by default uses the height and width in the image's dimensions itself. The <img>
+tag by default will not inherit any width or height set to the surrounding container.
+
+Setting the height to 100% is not an alternative because it would still be relative to the dimensions
+of the original image.
+
+But you can still use inline-block in the container in which the above won't apply.

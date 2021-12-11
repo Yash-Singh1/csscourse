@@ -18,10 +18,15 @@
 .button:focus {
   outline: none;
 }
+
 .main-header {
   background: green;
   padding: 8px 16px;
   width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .main-nav__item {
@@ -81,6 +86,12 @@
   text-decoration: none;
   font-weight: 900;
   font-size: 22px;
+  height: 22px;
+  display: inline-block;
+}
+
+.main-header__brand > img {
+  height: 100%;
 }
 
 .main-nav {

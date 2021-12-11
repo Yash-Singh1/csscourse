@@ -1,0 +1,6 @@
+Stacking Context
+----
+
+A stacking context is formed within elements with the position: fixed; property oro position: sticky;
+property and makes sure that it can't stack on top of something other than within the container of
+its own parent element. Also applied on positions of relative/absolute with z-index other than auto.

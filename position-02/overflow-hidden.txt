@@ -1,0 +1,5 @@
+overflow: hidden;
+
+This cuts out any overflow out of the element and makes it not visible.
+Note that when applying this to the body element, it transfers to the html
+element, so you have to apply it at both places.

@@ -1,0 +1,46 @@
+Both gradients are only allowed to be put on the background-image value.
+
+linear-gradient
+----
+
+This allows you to add a gradient or transition of colors.
+
+At minimum takes two colors:
+
+linear-gradient(red, blue)
+
+Here is the format:
+
+linear-gradient([direction, ] [...[color [amount]]])
+
+Where direction is in the format:
+
+to ((top|bottom) (left|right)|top|bottom|left|right)
+
+Which defines starting from the opposite of the given to the given direction.
+
+You can also specify an angle measure, e.g. 350deg.
+
+Where amount is any measuring unit such as pixels, percentage, etc.
+
+Where color is any unit which represents a solid color.
+
+radial-gradient
+----
+
+This allows you to add an eliptical shape that transitions to the outer
+rings into different colors.
+
+The syntax is the same as the one for linear-gradient except the direction
+syntax is completely different.
+
+Where direction is the format:
+
+(ellipse [dimensions-keyword|length length]|circle [dimensions keyword|length])[at pos]
+
+Where length is a CSS length unit (width/height for ellipse and diameter for circle) and dimension-keyword
+is one of farthest-corner, closest-corner, farthest-side, closest-side. This defines where the side of the
+ellipse will touch.
+
+Where pos is either one or two CSS lengths defining relative to the top and left or a
+keyword like those for direction in linear-gradient (e.g. top bottom, left, etc.).

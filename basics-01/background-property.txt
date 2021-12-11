@@ -1,0 +1,72 @@
+background-image
+----
+
+Sets the image in the background. Overrides background-color. Also takes
+gradients (see gradients.txt).
+
+background-color
+----
+
+Sets the color in the background. Can be used in conjunction
+with background-image for larger images that take time to load
+as a color for it. Only one color is allowed.
+
+background-size
+----
+
+How large the background should be.
+
+background-size: <width>;
+background-size: <width> <height>; /* Overrides the aspect ratio of the width to the height */
+
+Note that above you can also set width or height to auto for automatically calculating it based on the aspect ratio.
+
+background-size: cover; /* Automatically fills the entire container */
+
+
+background-repeat
+----
+
+How many times it should repeat and whether it even should.
+
+background-repeat: no-repeat; /* Doesn't repeat the background image if given more space */
+background-repeat: repeat; /* Default */
+background-repeat: repeat-x; /* Repeat it horizontally only */
+background-repeat: repeat-y; /* Repeat it vertically only */
+
+background-position
+----
+
+The positioning of the background on the element. Pixel values
+define how much whitespace there should be on the sides of the image
+while percentages give how much of it should be zoomed in where.
+
+background-position: 10px;            /* X-axis only */
+background-position: 10px 20px;       /* Both X and Y */
+background-position: 10%;             /* Crop out the other 10% on the left */
+background-position: 10% 20%;         /* Crop out 10% on left, 20% on top */
+background-position: top 3% left 10%; /* From top 3% and left side 10% */
+
+background-origin
+----
+
+The part of the box-model to include the background into. Accepts values of
+padding-box, border-box, content-box, etc.
+
+background-clip
+----
+
+Where to crop the image of the box model. Overrides background-origin.
+
+background-attachment
+----
+
+Defines if the background scrolls with and how it behaves with scrolling.
+
+background shorthand
+----
+
+background: <image> <position>/<size> <repeat> [<origin> <clip> | <originAndClip>]
+background: <color>;
+
+Can contain multiple backgrounds seperated by a comma.
