@@ -1,0 +1,9 @@
+There is a height issue that often occurs with position relative/static. It causes
+the height to be 0 even though it is set to 100% for a div inside the body. The fix
+for this is simply the following:
+
+html, body {
+  height: 100%;
+}
+
+This problem doesn't occur on width values.

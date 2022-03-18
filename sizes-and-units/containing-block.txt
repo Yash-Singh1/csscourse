@@ -1,0 +1,6 @@
+Containing Block
+---
+
+This is the context which percentage values are relative
+to. For example, when you do position: fixed; the containing
+block shifts to the viewport.

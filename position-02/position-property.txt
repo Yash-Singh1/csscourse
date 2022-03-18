@@ -9,14 +9,18 @@ position: fixed;
 
 Takes the element out of the document flow. The positioning context
 changes to the viewport. Also has a side-effect of a inline-block like
-behavior. Works with block/inline level elements too.
+behavior. Works with block/inline level elements too. Makes the containing
+block for percentage values be the viewport too.
 
 position: absolute;
 ----
 
 Absolute and doesn't scroll down with scrolling. The positioning context
-is the lowest ancestor that has a position property set to something other
-than static. Difference between fixed is the positioning context depends.
+and the containing block for the percentage values is the lowest ancestor
+that has a position property set to something other than static. The padding
+of the ancestor counts for the containing block. Difference between fixed is
+the positioning context depends. The width will start at the end of the left
+or right.
 
 position: relative;
 ----
@@ -32,3 +36,9 @@ Hybrid of relative and fixed. Doesn't take the element out of the document flow.
 The top, bottom, right, and left properties define when relative to the viewport
 the fixed behavior should start. It stops the fixed behavior when the end of the
 parent element's content is reached.
+
+relative/static containing block
+----
+
+The containing block for position: relative; and position: static; is referred as
+the closest ancestor that is a block level element.
