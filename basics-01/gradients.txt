@@ -25,6 +25,12 @@ Where amount is any measuring unit such as pixels, percentage, etc.
 
 Where color is any unit which represents a solid color.
 
+repeating-linear-gradient
+----
+
+Alternative to linear-gradient that repeats. The sizing is naturally determined but can be overridden by
+using absolute values in the arguments instead of relative ones.
+
 radial-gradient
 ----
 
